@@ -1,0 +1,94 @@
+Script started on Mon 22 Aug 2016 06:03:30 PM CDT
+[?1l>[?12l[?25h[?1049l]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ cat words1.txt words2.txt 
+lumberjack
+scarecrow
+wheelhouse
+license
+stupefy
+artichoke
+scarecrow
+whistle
+lumberjack
+waltz
+scarecrow
+wheelhouse
+limousine
+stupefy
+artichoke
+scarecrow
+nightingale
+farewell
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ diff words1.txt words2.txt 
+1a2
+> waltz
+4c5
+< license
+---
+> limousine
+8c9,10
+< whistle
+---
+> nightingale
+> farewell
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ sort words1.txt 
+artichoke
+license
+lumberjack
+scarecrow
+scarecrow
+stupefy
+wheelhouse
+whistle
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ sort words2.txt 
+artichoke
+farewell
+limousine
+lumberjack
+nightingale
+scarecrow
+scarecrow
+stupefy
+waltz
+wheelhouse
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ sort words1.txt            -u words1.txt 
+artichoke
+license
+lumberjack
+scarecrow
+stupefy
+wheelhouse
+whistle
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ sort -u words2.txt 
+artichoke
+farewell
+limousine
+lumberjack
+nightingale
+scarecrow
+stupefy
+waltz
+wheelhouse
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ head -4 words1.txt 
+lumberjack
+scarecrow
+wheelhouse
+license
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ tail -4 words2.txt       1.txt 
+stupefy
+artichoke
+scarecrow
+whistle
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ head -4 words1.txt |sor    sort
+license
+lumberjack
+scarecrow
+wheelhouse
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ sor  t words1.txt  |    | head -4
+artichoke
+license
+lumberjack
+scarecrow
+]0;dcritchlow@apmycs2:~[dcritchlow@apmycs2 ~]$ exit
+exit
+
+Script done on Mon 22 Aug 2016 06:09:59 PM CDT
